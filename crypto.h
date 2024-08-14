@@ -1,10 +1,27 @@
-/**КОНСТАНТЫ**/
-/* Размер строки с паорлем */
-#define PASSWORD_SIZE_STD 33
+#ifndef _A2V_CRYPTO_H_
 
-#define A2V_str_standart_size 256
+#define _A2V_CRYPTO_H_
+
+/** REQUIRED HEADERS **/
+#include <stdio.h>
+#include <stdlib.h>
+#include "input.h"
+
+
+
+
+/** CONSTANTS **/
+#define PASSWORD_SIZE_STD 33 /* Password string size */
+
+
 
 extern struct st_sample_password_info {
     char * p_ch_password;
     int i_password_length;
 };
+
+/** PROTOTYPES **/
+
+extern struct st_sample_password_info * f_st_pass_create(void);
+
+#endif // _A2V_CRYPTO_H_

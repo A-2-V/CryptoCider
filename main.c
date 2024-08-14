@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-#include <crypto.h>
+#include "crypto.h"
 
 #define CHANGE_CODEPAGE system("chcp 1251")
 
