@@ -21,4 +21,11 @@ extern struct st_sample_password_info * f_st_pass_create(void)
     return p_st_password_info;
 }
 
+extern void f_st_pass_delete(struct st_sample_password_info * p_st_password_info)
+{
+    if (p_st_password_info->p_ch_password != NULL)
+        free(p_st_password_info->p_ch_password);
+
+    free(p_st_password_info);
+}
 
